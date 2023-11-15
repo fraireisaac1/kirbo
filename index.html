@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        #foo.rotate {
+  transform: rotate(45deg);
+}
+    </style>
+</head>
+<body>
+    <!--<div></div>
+<div class="blue"></div>
+<div class="blue"></div>-->
+<div id="kirbo">
+  <div id="mouth"></div>
+  <div class="eyes">
+    <div class="pup"></div>
+  </div>
+  <div class="eyes">
+    <div class="pup"></div>
+  </div>
+  
+  <div class="cheeks"></div>
+  <div class="cheeks"></div>
+  
+  <div id="foo"></div>
+  <div id="foo"></div>
+  
+  <div id="ar"></div>
+  <div id="ar"></div>
+  
+  <div id="h"></div>
+  
+  <div id="l">
+    <div id="lD">
+      <div id="lT"></div>
+    </div>
+  </div>
+</div>
+
+    <script>
+        let orb = document.querySelector('#kirbo');
+orb.style.height='300px';
+orb.style.width='300px';
+orb.style.background='linear-gradient(#ffddff, pink)';
+orb.style.borderRadius='50%';
+orb.style.margin='100px';
+orb.style.position='absolute';
+
+let jaw = document.querySelector('#mouth');
+jaw.style.height='30px';
+jaw.style.width='20px';
+jaw.style.backgroundColor='maroon';
+jaw.style.borderRadius='50%';
+jaw.style.position='relative';
+jaw.style.left='140px';
+jaw.style.top='175px';
+
+let eye = document.querySelectorAll('.eyes');
+eye.forEach(item => {
+  item.style.width='25px';
+  item.style.height='80px';
+  item.style.background='linear-gradient(black, blue)';
+  item.style.borderRadius='50%';
+  item.style.display='inline-block';
+  item.style.position='relative';
+  item.style.top='50px';
+  //item[1].style.marginLeft='50px';
+})
+eye[0].style.marginLeft='110px';
+eye[1].style.marginLeft='22px';
+
+let pupil = document.querySelectorAll('.pup');
+pupil.forEach(itemP => {
+  itemP.style.height='30px';
+  itemP.style.width='15px';
+  itemP.style.backgroundColor='white';
+  itemP.style.borderRadius='50%';
+  itemP.style.position='relative';
+  itemP.style.left='5px';
+  itemP.style.top='3px';
+})
+
+let blush = document.querySelectorAll('.cheeks');
+blush.forEach(itemB => {
+  itemB.style.width='50px';
+  itemB.style.height='20px';
+  itemB.style.backgroundColor='#ff99dd';
+  itemB.style.borderRadius='50%';
+  itemB.style.display='inline-block';
+  itemB.style.position='absolute';
+  itemB.style.top='155px';
+})
+blush[0].style.right='200px';
+blush[1].style.left='200px';
+
+let feet = document.querySelectorAll('#foo');
+feet.forEach(itemF => {
+  itemF.style.width='80px';
+  itemF.style.height='145px';
+  itemF.style.background='linear-gradient(#ff7777, #ff3333)';
+  itemF.style.borderRadius='50%';
+  itemF.style.display='inline-block';
+  itemF.style.position='absolute';
+  itemF.style.top='280px';
+})
+feet[0].style.right='150px';
+feet[1].style.left='150px';
+
+let arms = document.querySelectorAll('#ar');
+arms.forEach(itemA => {
+  itemA.style.height='80px';
+  itemA.style.width='145px';
+  itemA.style.background='linear-gradient(#ffddff, pink)';
+  itemA.style.borderRadius='50%';
+  itemA.style.display='inline-block';
+  itemA.style.position='absolute';
+  itemA.style.top='150px';
+})
+arms[0].style.right='250px';
+arms[1].style.left='250px';
+
+let handle=document.getElementById('h');
+handle.style.height='125px';
+handle.style.width='20px';
+handle.style.backgroundColor='red';
+handle.style.marginLeft='350px';
+handle.style.borderRadius='30%';
+
+let loli=document.getElementById('l');
+loli.style.height='120px';
+loli.style.width='120px';
+loli.style.borderRadius='50%';
+loli.style.background='linear-gradient(yellow, orange)';
+loli.style.position='absolute';
+loli.style.left='300px';
+loli.style.bottom='175px';
+
+let loliTwo=document.getElementById('lD');
+loliTwo.style.height='80px';
+loliTwo.style.width='80px';
+loliTwo.style.background='linear-gradient(teal, cyan)';
+loliTwo.style.borderRadius='50%';
+loliTwo.style.position='absolute';
+loliTwo.style.left='20px';
+loliTwo.style.top='20px';
+
+let loliThree=document.getElementById('lT');
+loliThree.style.height='50px';
+loliThree.style.width='50px';
+loliThree.style.borderRadius='50%';
+loliThree.style.background='linear-gradient(yellow, orange)';
+loliThree.style.position='absolute';
+loliThree.style.left='15px';
+loliThree.style.top='15px';
+    </script>
+</body>
+</html>
